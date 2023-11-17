@@ -9,3 +9,7 @@ function converyCurrency() {
     printError(base,target,response)
   }
 }
+
+function printElements(base,target,response) {
+  document.querySelector(".original").innerHTML = `Amount in `
+}
