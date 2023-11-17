@@ -1,2 +1,3 @@
 import "./css/styles.css";
-alert("hello");
+import Currency from "./currencyApi"
+

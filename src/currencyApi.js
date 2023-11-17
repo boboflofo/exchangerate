@@ -1,4 +1,4 @@
-class Currency {
+export default class Currency {
   static async getExchange() {
     try {
       const response = await fetch(
