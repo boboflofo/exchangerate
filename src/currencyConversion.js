@@ -1,3 +1,3 @@
-export default function convert() {
-  
+export default function convert(amount,rate) {
+  return amount * rate
 }
