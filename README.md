@@ -1,8 +1,8 @@
-# Pizza Parlor
+# Currency Exchange
 
 #### By Jonathan Song
 
-#### Website that converts earth years to other planetary solar years
+#### Website that converts currency to other currency types
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 * npm Webpack
 
 ## Description
-Website that asks users for age and uses that age to convert it to different years based on the solar years of other planets. This website also asks the user for future and previous birth years to convert the time difference in years based on other planets.
+Website that asks users for amount in a specified currency and converts that amount to that specified currency
 
 
 ## Setup/Installation Requirements
@@ -60,3 +60,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Contact jonathan91790@yahoo.com for additional issues
+
+
+Copyright (c) _11/17/2023_ _Jonathan Song(s)_

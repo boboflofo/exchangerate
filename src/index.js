@@ -4,7 +4,7 @@ import convert from "./currencyConversion";
 
 async function convertCurrency(base, target) {
   const response = await Currency.getExchange(base, target);
-  if (response.main) {
+  if (response.result) {
     printElements(base, target, response);
   } else {
     printError(response);
@@ -13,9 +13,8 @@ async function convertCurrency(base, target) {
 
 function printElements(base, target, response) {
   const amount = document.querySelector("#number").value;
-  console.log(response)
   const rate = response.conversion_rate;
-  
+
   const convertedRate = convert(amount, rate);
   document.querySelector(
     ".original"
@@ -26,13 +25,12 @@ function printElements(base, target, response) {
 }
 
 function printError(error) {
-  document.querySelector(".original").innerHTML = `${error}`;
+  document.querySelector(".original").innerHTML = `Er ${error}`;
 }
 
 function handleSubmit(e) {
   e.preventDefault();
   const base = document.querySelector("#currency").value;
-  console.log(base);
   const target = document.querySelector("#currencyTarget").value;
   convertCurrency(base, target);
 }
