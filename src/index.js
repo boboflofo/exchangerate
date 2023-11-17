@@ -4,7 +4,7 @@ import convert from "./currencyConversion";
 
 async function convertCurrency(base, target) {
   const response = await Currency.getExchange(base, target);
-  if (response.error) {
+  if (!response.main) {
     printError(response);
   } else {
     printElements(base, target, response);
@@ -26,8 +26,7 @@ function printElements(base, target, response) {
 }
 
 function printError(error) {
-  document.querySelector(".original").innerHTML = `Error: ${error.message}`;
-  console.log(error);
+  document.querySelector(".original").innerHTML = `Error: ${error}`;
 }
 
 function handleSubmit(e) {
