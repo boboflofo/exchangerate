@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currency Exchange</title>
-  </head>
-  <body>
-    <form id='form'>
-      <label>Choose a base currency and indicate amount:
-        <input type="number" id="number">
-        <select name="currency" id="currency">
-          <option value="USD">USD</option>
-          <option value="AUD">AUD</option>
-          <option value="BGN">BGN</option>
-          <option value="CAD">CAD</option>
-          <option value="CNY">CNY</option>
-          <option value="EUR">EUR</option>
-        </select>
-      </label>
-      <label>Choose a target currency to convert to:
-        <select name="currencyTarget" id="currencyTarget">
-          <option value="USD">USD</option>
-          <option value="AUD">AUD</option>
-          <option value="BGN">BGN</option>
-          <option value="CAD">CAD</option>
-          <option value="CNY">CNY</option>
-          <option value="EUR">EUR</option>
-        </select>
-      </label>
-      <button>Convert Currency</button>
-    </form>
-    <div class="result">
-      <p class="original"> 
 
-      </p>
-      <p class="converted">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Exchange</title>
+</head>
 
-      </p>
-    </div>
-  </body>
+<body>
+  <form id='form'>
+    <label>Choose a base currency and indicate amount:
+      <input type="number" id="number">
+      <select name="currency" id="currency">
+        <option value="USD">USD</option>
+        <option value="AUD">AUD</option>
+        <option value="BGN">BGN</option>
+        <option value="CAD">CAD</option>
+        <option value="CNY">CNY</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </label>
+    <label>Choose a target currency to convert to:
+      <select name="currencyTarget" id="currencyTarget">
+        <option value="USD">USD</option>
+        <option value="AUD">AUD</option>
+        <option value="BGN">BGN</option>
+        <option value="CAD">CAD</option>
+        <option value="CNY">CNY</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </label>
+    <button>Convert Currency</button>
+  </form>
+  <div class="result">
+    <p class="original">
+
+    </p>
+    <p class="converted">
+
+    </p>
+  </div>
+</body>
+
 </html>
