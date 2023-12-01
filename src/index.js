@@ -1,6 +1,6 @@
 import "./css/styles.css";
-import Currency from "./currencyApi";
-import convert from "./currencyConversion";
+import Currency from "./js/currencyApi";
+import convert from "./js/currencyConversion";
 
 async function convertCurrency(base, target) {
   const response = await Currency.getExchange(base, target);

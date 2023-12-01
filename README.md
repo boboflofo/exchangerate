@@ -20,10 +20,12 @@ Website that asks users for amount in a specified currency and converts that amo
 
 * Navigate to the repository of the named project through this [link](https://github.com/boboflofo/pizza-parlor.git)
 * On the top right of the screen, navigate to the **fork** button and fork the repository
-* Open a code editor such as VScode and in the terminal git clone the project for editing capabilities
+* Open a code editor such as VScode and in the terminal **git clone** the project for editing capabilities
 * Install dependencies using command in terminal **npm install**
 * To utilize personal API keys, add **.env** to the **.gitignore** file
 * Create a **.env file**
+* To have access to an API key for this project, navigate to this [link](https://www.exchangerate-api.com/) to sign up and create a key
+* Inside the .env file, set your key under a variable to hide your key from being uploaded
 * Install the dotenv-webpack with command **npm install dotenv-webpack@8.0.1 --save-dev** version updated
 * Under **webpack.config.js** require it with **const Dotenv = require('dotenv-webpack');** and add to the plugin array
 * Personalize and edit directly in your code editor!
